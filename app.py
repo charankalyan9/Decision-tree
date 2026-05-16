@@ -17,7 +17,7 @@ df = pd.read_csv("loan_prediction.csv")
 
 # ---------------- HANDLE MISSING VALUES ----------------
 
-df.fillna(method="ffill", inplace=True)
+df = df.ffill()
 
 # ---------------- DROP LOAN ID ----------------
 
